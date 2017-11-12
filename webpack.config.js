@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     'webpack-hot-middleware/client',
-    path.join(__dirname, '/browser/react/index.js')
+    path.join(__dirname, '/frontend/index.js')
   ],
   output: {
     path: path.join(__dirname, '/public'),
@@ -35,6 +35,11 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
   ],
   resolve: {
-    alias: {}
+    alias: {
+      containers: path.join(__dirname, 'frontend', 'containers'),
+      components: path.join(__dirname, 'frontend', 'components'),
+      theme: path.join(__dirname, 'frontend', 'theme'),
+      app: path.join(__dirname, 'frontend'),
+    }
   }
 };
