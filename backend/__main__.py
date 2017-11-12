@@ -1,2 +1,2 @@
-from __init__ import app
+from pkg import app
 app.run(debug=True)
