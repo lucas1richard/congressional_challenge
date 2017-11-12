@@ -1,4 +1,5 @@
 import React from 'react';
+import H1 from 'components/H1';
 // import PropTypes from 'prop-types';
 
 class Home extends React.Component { // eslint-disable-line
@@ -7,7 +8,7 @@ class Home extends React.Component { // eslint-disable-line
   render() {
     return (
       <div>
-        <h1>Home</h1>
+        <H1>Home</H1>
       </div>
     );
   }

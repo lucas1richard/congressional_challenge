@@ -12,6 +12,7 @@ import {
 } from 'react-router';
 
 import Home from 'containers/Home';
+import MostViewedBills from 'containers/Most-Viewed-Bills';
 
 import { Provider } from 'react-redux';
 import Main from './Main';
@@ -22,6 +23,7 @@ const App = (
       <Router history={browserHistory}>
         <Route component={Main}>
           <Route path="/" component={Home} />
+          <Route path="mostviewed" component={MostViewedBills} />
         </Route>
       </Router>
     </ThemeProvider>
